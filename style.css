@@ -9,6 +9,10 @@ body{
     overflow-x: hidden;
 }
 
+.container{
+    margin: 0 auto;
+}
+
 .header{
     background-image: url(./images/doctorrr.webp);
     background-repeat: no-repeat;
@@ -226,6 +230,7 @@ body{
     margin-top: 0.2%;
     color: #fff;
     width: 20%;
+    border-radius: 15px;
 }
 
 .faq-nurse{
@@ -378,8 +383,9 @@ section img{
     margin-left: 6%;
     background: blue;
     color: #fff;
-    padding: 2%;
+    padding: 3%;
     text-decoration: none;
+    border-radius: 15px;
 }
 
 fieldset{
@@ -638,8 +644,7 @@ legend{
 
 @media screen and (max-width: 375px){
     .container{
-        max-width: 100%;
-        overflow-y: hidden;
+        margin: 0;
     }
 
     .left{
@@ -669,4 +674,59 @@ legend{
         padding: 10px;
         border-radius: 15px;
     }
+
+    .footer{
+        display: block;
+        text-align: center;
+        align-items: center;
+    }
+
+    .first{
+        padding-right: 30px;
+    }
+
+    .first,
+    .second{
+        margin-bottom: 10px;
+    }
+
+    .third ul{
+        display: block;
+    }
+
+    .third li{
+        /* margin-right: 5px; */
+        margin-bottom: 10px;
+    }
+
+    .background{
+        max-width: 100%;
+    }
+
+    .background img{
+        height: 50vh;
+    }
+
+    .side img{
+        max-width: 100%;
+    }
+
+    .other{
+        width: 125%;
+    }
+
+    .other a{
+        margin-left: 100px;
+    }
+
+    .other h4{
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nurse img{
+        max-width: 200%;
+    }
+
+    
 }
