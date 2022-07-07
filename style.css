@@ -39,13 +39,13 @@ body{
 }
 
 .right{
-    width: 40%;
+    width: 50%;
 }
 
 .right ul{
     display: flex;
-    gap: 50px;
-    /* padding: 3%; */
+    gap: 20px;
+    padding: 3%;
 }
 
 .right li{
@@ -322,12 +322,13 @@ body{
     object-fit: cover;
     opacity: 0.5;
     width: 100%;
+    height: 100vh;
 }
 
 section{
     position: absolute;
-    left: 1000px;
-    top: 4100px;
+    top: 4000px;
+    left: 850px;
     transform: translate(-60%, -60%);
     color: #fff;
 }
@@ -336,14 +337,14 @@ section h4{
     font-size: 20px;
     text-align: center;
     margin-bottom: 2%;
-    margin-right: 5%;
+    margin-right: 10px;
 }
 
 section img{
-    width: 12%;
-    height: 90px;
+    width: 20%;
+    height: 150px;
     border-radius: 100%;
-    margin-left: 310px;
+    margin-left: 280px;
     margin-top: 5%;
 }
 
@@ -500,6 +501,10 @@ legend{
 }
 
 @media screen and (max-width: 765px){
+
+    body{
+        overflow-x: hidden;
+    }
     .header{
         background-image: url(./images/doctorrr.webp);
         background-repeat: no-repeat;
@@ -513,7 +518,7 @@ legend{
     .left{
         position: relative;
         top: -40px;
-        margin-left: 200px;
+        margin-left: 300px;
     }
 
     .right{
@@ -600,8 +605,19 @@ legend{
     }
 
     .background{
-        width: 195vw;
-        height: 50vh;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    section{
+        position: absolute;
+        top: 7300px;
+        left: 400px;
+    }
+
+    section img{
+        margin-left: 100px;
+        width: 40%;
     }
 
     .hero-pro{
@@ -609,8 +625,12 @@ legend{
     }
 
     .other{
-        width: 100%;
+        width: 110%;
         margin: auto;
+    }
+
+    .other h4{
+        text-align: center;
     }
 
     .hero-map{
@@ -643,18 +663,9 @@ legend{
 }
 
 @media screen and (max-width: 375px){
-    .container{
-        margin: 0;
-    }
-
-    .left{
-        margin: auto;
-    }
-
-    .header{
-        /* width: 100%; */
-    }
-
+   .left{
+    margin-left: 150px;
+   }
     .middle h5{
         font-size: 16px;
     }
@@ -704,7 +715,14 @@ legend{
     }
 
     .background img{
-        height: 50vh;
+        height: 100vh;
+    }
+
+    section{
+        position: absolute;
+        top: 6200px;
+        left: 220px;
+        width: 90%;
     }
 
     .side img{
