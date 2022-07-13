@@ -311,57 +311,57 @@ body{
     font-size: 25px;
 }
 
-.background{
-    height: 600px;
-    width: 100vw;
-    background: blue;
-    overflow: hidden;
-}
-
-.background img{
-    object-fit: cover;
-    opacity: 0.5;
-    width: 100%;
-    height: 100vh;
-}
 
 section{
-    position: absolute;
-    top: 4000px;
-    left: 850px;
-    transform: translate(-60%, -60%);
+    background-image: linear-gradient(rgba(7, 7, 253, 0.5) 100%, rgba(38, 38, 247, 0.5) 100%), url(./images/docs.jpg);
     color: #fff;
-}
-
-section h4{
-    font-size: 20px;
     text-align: center;
-    margin-bottom: 2%;
-    margin-right: 10px;
 }
 
-section img{
-    width: 20%;
-    height: 150px;
-    border-radius: 100%;
-    margin-left: 280px;
-    margin-top: 5%;
-}
-
-.test-text{
-    text-align: center;
-    margin-top: 5%;
-}
-
-.test-stars{
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-}
-
-.star{
-    color: yellow;
-}
+.hero-testimonial-wrap{
+    width:80%;
+    margin:auto;
+    text-align:center;
+  }
+  
+  section h4{
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 2%;
+      margin-right: 10px;
+      padding-top: 30px;
+  }
+  .test-img{
+    width:200px;
+      height:200px;
+    margin:auto;
+    
+  
+  }
+  .test-img img{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+    object-fit:cover;
+  }
+  
+  
+  .test-text {
+  margin-top:30px;
+  }
+  
+  .test-stars{
+  /*     display: flex; */
+      justify-content: center;
+      margin-top: 2%;
+      padding-bottom: 30px;
+  }
+  
+  .star{
+      color: yellow;
+    margin-bottom:20px;
+  }
+  
 
 .hero-pro{
     display: flex;
@@ -501,10 +501,10 @@ legend{
 }
 
 @media screen and (max-width: 765px){
-
-    body{
-        overflow-x: hidden;
+    .container{
+        overflow: hidden;
     }
+   
     .header{
         background-image: url(./images/doctorrr.webp);
         background-repeat: no-repeat;
@@ -516,18 +516,36 @@ legend{
     }
 
     .left{
-        position: relative;
-        top: -40px;
-        margin-left: 300px;
-    }
+        margin-right: 150px;
+       }
+        .middle h5{
+            font-size: 16px;
+        }
+    
+        .middle h3{
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+    
+        .middle p{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+    
+        .middle a{
+            font-size: 15px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    
+
+   
 
     .right{
         display: none;
     }
 
-    .middle{
-        font-size: 20px;
-    }
+
 
     .hero-section{
         display: block;
@@ -604,21 +622,7 @@ legend{
         width: 100%;
     }
 
-    .background{
-        max-width: 100%;
-        height: 100vh;
-    }
-
-    section{
-        position: absolute;
-        top: 7300px;
-        left: 400px;
-    }
-
-    section img{
-        margin-left: 100px;
-        width: 40%;
-    }
+    
 
     .hero-pro{
         display: block;
@@ -654,75 +658,14 @@ legend{
 
     .footer{
         padding: 20px;
-    }
-
-    .third ul{
-        gap: 15px;
-    }
-    
-}
-
-@media screen and (max-width: 375px){
-   .left{
-    margin-left: 150px;
-   }
-    .middle h5{
-        font-size: 16px;
-    }
-
-    .middle h3{
-        font-size: 22px;
-        margin-bottom: 10px;
-    }
-
-    .middle p{
-        font-size: 16px;
-        margin-bottom: 20px;
-    }
-
-    .middle a{
-        font-size: 15px;
-        padding: 10px;
-        border-radius: 15px;
-    }
-
-    .footer{
         display: block;
         text-align: center;
+    }
+
+    .third ul li{
+        gap: 5px;
+        margin-top: 10px;
         align-items: center;
-    }
-
-    .first{
-        padding-right: 30px;
-    }
-
-    .first,
-    .second{
-        margin-bottom: 10px;
-    }
-
-    .third ul{
-        display: block;
-    }
-
-    .third li{
-        /* margin-right: 5px; */
-        margin-bottom: 10px;
-    }
-
-    .background{
-        max-width: 100%;
-    }
-
-    .background img{
-        height: 100vh;
-    }
-
-    section{
-        position: absolute;
-        top: 6200px;
-        left: 220px;
-        width: 90%;
     }
 
     .side img{
@@ -748,3 +691,4 @@ legend{
 
     
 }
+
